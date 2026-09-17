@@ -1,5 +1,9 @@
 import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
+
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -24,10 +28,7 @@ const options = {
 flatpickr('#datetime-picker', options);
 let userSelectedDate;
 
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-
-const datetimePicker = document.querySelector('.datetime-picker');
+const datetimePicker = document.querySelector('#datetime-picker');
 const start = document.querySelector('.datetime-btn');
 const timer = document.querySelector('.timer');
 const daysShow = timer.querySelector('[data-days]');
